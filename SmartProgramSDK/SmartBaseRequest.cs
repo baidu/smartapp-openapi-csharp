@@ -17,7 +17,7 @@ namespace SmartProgramSDK
         // 目前的问题：各个接口的基本响应字段不一致
         // 后续会统一
         [Newtonsoft.Json.JsonProperty("error_msg")] 
-        public long ErrorMsg { get; set; }
+        public string ErrorMsg { get; set; }
 
         [Newtonsoft.Json.JsonProperty("error_code")] 
         public long ErrorCode { get; set; }
@@ -43,7 +43,7 @@ namespace SmartProgramSDK
         [Newtonsoft.Json.JsonProperty("timestamp")]
         public string TimeStamp { get; set; }
     }
-    public class OpenAPIException: ApplicationException
+    public class OpenAPIException: System.ApplicationException
     {
         private long code;
         private string msg;
@@ -53,7 +53,7 @@ namespace SmartProgramSDK
             this.msg = message;
         } 
     }
-    public class APIException: ApplicationException
+    public class APIException: System.ApplicationException
     {
         private long code;
         private string msg;
