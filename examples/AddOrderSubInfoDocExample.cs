@@ -35,7 +35,7 @@ namespace testSDK
                 Quantity = 1,  // 文档中对应字段：Quantity，实际使用时请替换成真实参数
             };
             AddOrderSubInfoRequestDataItemEXTSubsOrderItemsItemRefund AddOrderSubInfoRequestDataItemEXTSubsOrderItemsItemRefundVal = new AddOrderSubInfoRequestDataItemEXTSubsOrderItemsItemRefund {
-                Amount = "1568",  // 文档中对应字段：Amount，实际使用时请替换成真实参数
+                Amount = 1568,  // 文档中对应字段：Amount，实际使用时请替换成真实参数
                 
                 Product = new List<AddOrderSubInfoRequestDataItemEXTSubsOrderItemsItemRefundProductItem> { AddOrderSubInfoRequestDataItemEXTSubsOrderItemsItemRefundProductItemVal, },  // 文档中对应字段：Product，实际使用时请替换成真实参数
             };
