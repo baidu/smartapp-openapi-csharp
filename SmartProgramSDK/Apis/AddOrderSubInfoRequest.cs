@@ -95,7 +95,7 @@ namespace SmartProgramSDK.Apis
         /// </summary>
         [DataMember]
         [Newtonsoft.Json.JsonProperty("Amount")]
-        public string Amount { get; set; }
+        public long Amount { get; set; }
         /// <summary>
         /// 售后商品列表
         /// </summary>
